@@ -26,7 +26,7 @@ class VectorStore:
 
     # Add documents with embeddings to the store
     def add_documents(self, texts, embeddings, metadatas, ids):
-        print(f"🔄 Adding {len(texts)} documents...")
+        print(f"🔄 Adding {len(texts)} documents.")
         
         # Convert numpy array to list for ChromaDB
         if isinstance(embeddings, np.ndarray):
@@ -47,6 +47,7 @@ class VectorStore:
         if isinstance(query_embedding, np.ndarray):
             query_embedding = query_embedding.tolist()
         
+        # Find similar documents (at max n_results)
         results = self.collection.query(
             query_embeddings=[query_embedding],
             n_results=n_results
