@@ -19,6 +19,7 @@ def run_phase1_pipeline():
     # Step 1: Collect paper metadata
     print("\n📊 Step 1: Collecting papers from ArXiv")
     collector = ArxivDataCollector()
+    # print(collector)
     
     # Just one category for testing
     categories = ['cs.LG']  # Just Machine Learning
@@ -77,9 +78,9 @@ def run_phase1_pipeline():
     - Text chunks created: {len(all_chunks)}
     
     📁 Files created:
-    - papers/collected_papers.json
-    - papers/processed_text/*.json
-    - papers/chunks/all_chunks.json
+    - ../papers/collected_papers.json
+    - ../papers/processed_text/*.json
+    - ../papers/chunks/all_chunks.json
     
     🚀 Ready for Phase 2: Vector Embeddings!
     """)

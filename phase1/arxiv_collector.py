@@ -12,15 +12,14 @@ logger = logging.getLogger(__name__)
 
 # Define the ArxivDataCollector class.
 class ArxivDataCollector:
-    def __init__(self, base_dir="papers"):
+    def __init__(self, base_dir="../papers"):
         self.base_dir = Path(base_dir)
         self.base_url = "http://export.arxiv.org/api/query"
         self.delay_between_calls = 3  # ArXiv rate limit
         self.setup_directories()
     
-    # Create necessary directories.
+    # Create folder structure.
     def setup_directories(self):
-        """Create folder structure"""
         directories = [
             self.base_dir,
             self.base_dir / "raw_pdfs",

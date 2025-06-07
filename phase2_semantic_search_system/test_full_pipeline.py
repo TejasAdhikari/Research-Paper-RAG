@@ -7,7 +7,7 @@ from vector_store import VectorStore
 def test_pipeline_with_chunks():
     # Load chunks
     print("📂 Loading chunks.")
-    with open("papers/chunks/all_chunks.json", 'r', encoding='utf-8') as f:
+    with open("../papers/chunks/all_chunks.json", 'r', encoding='utf-8') as f:
         chunks = json.load(f)
     
     # Limit to first 20 for testing

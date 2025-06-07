@@ -11,7 +11,7 @@ def run_phase2():
     print("=" * 50)
     
     # Load all chunks from Phase 1
-    chunks_file = "papers/chunks/all_chunks.json"
+    chunks_file = "../papers/chunks/all_chunks.json"
     print(f"📂 Loading chunks from {chunks_file}.")
     
     try:

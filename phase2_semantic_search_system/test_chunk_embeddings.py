@@ -2,7 +2,7 @@ import json
 from embedding_generator import EmbeddingGenerator
 
 # Load a few chunks to test
-chunks_file = "papers/chunks/all_chunks.json"
+chunks_file = "../papers/chunks/all_chunks.json"
 
 try:
     with open(chunks_file, 'r', encoding='utf-8') as f:

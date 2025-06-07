@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 def inspect_phase1_results():
-    base_dir = Path("papers")
+    base_dir = Path("../papers")
     
     # Check collected papers
     if (base_dir / "collected_papers.json").exists():

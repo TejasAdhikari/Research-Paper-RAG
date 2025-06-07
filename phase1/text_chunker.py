@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 
 
 class TextChunker:
-    def __init__(self, base_dir="papers", chunk_size=1000, overlap=200):
+    def __init__(self, base_dir="../papers", chunk_size=1000, overlap=200):
         self.base_dir = Path(base_dir)
         self.text_dir = self.base_dir / "processed_text"
         self.chunks_dir = self.base_dir / "chunks"

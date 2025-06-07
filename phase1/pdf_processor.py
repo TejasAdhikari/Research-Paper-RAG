@@ -9,7 +9,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 class PDFProcessor:
-    def __init__(self, base_dir="papers"):
+    def __init__(self, base_dir="../papers"):
         self.base_dir = Path(base_dir)
         self.pdf_dir = self.base_dir / "raw_pdfs"
         self.text_dir = self.base_dir / "processed_text"
@@ -17,7 +17,6 @@ class PDFProcessor:
     
     # Download and process a PDF file.
     def download_single_pdf(self, pdf_url, paper_id):
-        """Download one PDF for testing"""
         pdf_path = self.pdf_dir / f"{paper_id}.pdf"
         
         if pdf_path.exists():
@@ -44,7 +43,6 @@ class PDFProcessor:
 
     # Extract text from a PDF file.
     def extract_text_from_pdf(self, pdf_path):
-        """Extract text from a PDF file"""
         try:
             with open(pdf_path, 'rb') as file:
                 pdf_reader = PyPDF2.PdfReader(file)
@@ -63,7 +61,6 @@ class PDFProcessor:
 
     # Process a single paper completely.
     def process_single_paper(self, paper_data):
-        """Process one paper completely"""
         paper_id = paper_data['id']
         
         # Download PDF
