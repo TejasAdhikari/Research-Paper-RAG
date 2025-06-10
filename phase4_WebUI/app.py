@@ -65,6 +65,7 @@ st.markdown("""
             margin: 5px 0;
             border-radius: 5px;
             font-size: 0.9em;
+            color: rgb(0 0 0);
         }
         
         .demo-warning {
