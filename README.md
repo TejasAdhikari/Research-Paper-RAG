@@ -91,14 +91,14 @@ streamlit run phase4_WebUI/app.py
 
 ```mermaid
 graph TD
-    A[ArXiv API<br/>(Papers)] --> B[Text Processing<br/>(Chunking)]
-    B --> C[Vector DB<br/>(ChromaDB)]
-    C --> D[RAG Pipeline<br/>(Gemini Pro)]
-    D --> E[Web Interface<br/>(Streamlit)]
+    A[ArXiv API<br/>Papers] --> B[Text Processing<br/>Chunking]
+    B --> C[Vector DB<br/>ChromaDB]
+    C --> D[RAG Pipeline<br/>Gemini Pro]
+    D --> E[Web Interface<br/>Streamlit]
 
-    <!-- style A fill:#f9f,stroke:#333,stroke-width:2px
+    style A fill:#f9f,stroke:#333,stroke-width:2px
     style B fill:#bbf,stroke:#333,stroke-width:2px
     style C fill:#dfd,stroke:#333,stroke-width:2px
     style D fill:#fdd,stroke:#333,stroke-width:2px
-    style E fill:#ddd,stroke:#333,stroke-width:2px -->
+    style E fill:#ddd,stroke:#333,stroke-width:2px
 ```
