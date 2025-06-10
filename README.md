@@ -2,7 +2,7 @@
 
 An intelligent AI system that can answer questions about research papers using Retrieval-Augmented Generation (RAG) technology.
 
-![RAG System Demo](demo_screenshot.png)
+![RAG System Demo](homePage.png)
 
 ## 🌟 Live Demo
 **[Try the live demo here!](https://research-paper-rag.streamlit.app/)**
