@@ -5,7 +5,7 @@ An intelligent AI system that can answer questions about research papers using R
 ![RAG System Demo](homePage.png)
 
 ## 🌟 Live Demo
-**[Try the live demo here!](https://research-paper-rag.streamlit.app/)**
+**[Try the live demo here!](https://research-paper-rag-demo.streamlit.app/)**
 
 ## 🎯 What It Does
 This system combines semantic search with large language models to provide accurate, cited answers about research papers. Ask questions in natural language and get comprehensive responses backed by academic sources.
