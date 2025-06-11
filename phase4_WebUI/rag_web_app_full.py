@@ -310,5 +310,9 @@ def about_page():
                 """)
 
 # Main app
-setup_sidebar()
-main_interface()
+def main():
+    setup_sidebar()
+    main_interface()
+
+if __name__ == "__main__":
+    main()
