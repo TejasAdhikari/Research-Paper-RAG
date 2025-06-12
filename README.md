@@ -87,6 +87,15 @@ export GOOGLE_API_KEY="your-api-key-here"
 streamlit run phase4_WebUI/app.py
 ```
 
+### Docker
+```bash
+# Docker build image
+docker build -t your-image-name .
+
+# Docker run image
+docker run -p 8501:8501 your-image-name 
+```
+
 ## 📈 System Architecture Diagram
 
 ```mermaid
